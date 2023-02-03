@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_product_card_product_cards",
+  "info": {
+    "displayName": "Card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "title.title"
+    },
+    "Description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "copy.copy"
+    },
+    "Media": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Price": {
+      "type": "float",
+      "required": true
+    }
+  }
+}

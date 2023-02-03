@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products_all",
+  "info": {
+    "singularName": "products",
+    "pluralName": "products-all",
+    "displayName": "Products",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ProductCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "card.product-card"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    }
+  }
+}
