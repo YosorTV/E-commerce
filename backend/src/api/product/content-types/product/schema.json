@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "products_all",
+  "collectionName": "products",
   "info": {
-    "singularName": "products",
-    "pluralName": "products-all",
-    "displayName": "Products",
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "products",
     "description": ""
   },
   "options": {
@@ -12,7 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "ProductCard": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "product": {
       "type": "component",
       "repeatable": true,
       "component": "card.product-card"

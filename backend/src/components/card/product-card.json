@@ -1,22 +1,12 @@
 {
   "collectionName": "components_product_card_product_cards",
   "info": {
-    "displayName": "Card",
+    "displayName": "card",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "Title": {
-      "type": "component",
-      "repeatable": false,
-      "component": "title.title"
-    },
-    "Description": {
-      "type": "component",
-      "repeatable": false,
-      "component": "copy.copy"
-    },
-    "Media": {
+    "image": {
       "type": "media",
       "multiple": true,
       "required": true,
@@ -24,9 +14,20 @@
         "images"
       ]
     },
-    "Price": {
+    "price": {
       "type": "float",
       "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "badge": {
+      "type": "string"
     }
   }
 }
