@@ -1,14 +1,13 @@
 {
-  "kind": "collectionType",
-  "collectionName": "products",
+  "kind": "singleType",
+  "collectionName": "product",
   "info": {
-    "singularName": "product",
-    "pluralName": "products",
-    "displayName": "products",
-    "description": ""
+    "singularName": "products",
+    "pluralName": "product",
+    "displayName": "Products"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
@@ -20,14 +19,10 @@
       "type": "text",
       "required": true
     },
-    "product": {
+    "products": {
       "type": "component",
       "repeatable": true,
       "component": "card.product-card"
-    },
-    "slug": {
-      "type": "uid",
-      "required": true
     }
   }
 }

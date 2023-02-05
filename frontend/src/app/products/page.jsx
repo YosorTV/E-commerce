@@ -1,12 +1,18 @@
 'use client';
+
+import { Product } from 'components/simple';
 import { getProducts } from 'src/services/api/products';
 
 export default function Products() {
-  const { data, fetching, error } = getProducts();
+  const { data } = getProducts();
+
+  const printCard = (product) => <Product key={product.id} product={product} />;
 
   return (
-    <div>
-      <h1>Products</h1>
-    </div>
+    <main>
+      <h1>{data?.title}</h1>
+      <p>{data?.description}</p>
+      {data?.products?.map(printCard)}
+    </main>
   );
 }

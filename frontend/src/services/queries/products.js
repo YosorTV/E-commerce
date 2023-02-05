@@ -1,3 +1,13 @@
+const imgParams = () => `
+image {
+  data {
+    attributes {
+      formats
+    }
+  }
+}
+`;
+
 export const PRODUCT_QUERY = `
 query {
   products {
@@ -5,18 +15,13 @@ query {
       attributes {
         title
         description
-        product {
+        products {
           id
           title
           description
           badge
-          image {
-            data {
-              attributes {
-                formats
-              }
-            }
-          }
+          price
+          ${imgParams()}
         }
       }
     }
