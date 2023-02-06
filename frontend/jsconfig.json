@@ -3,11 +3,10 @@
     "baseUrl": ".",
     "paths": {
       "components/*": ["src/components/*"],
-      "helpers/*": ["helpers/*"],
+      "helpers/*": ["src/helpers/*"],
       "assets/*": ["assets/*"],
-      "mocks/*": ["mocks/*"],
       "pages/*": ["src/pages/*"],
-      "styles/*": ["styles/*"]
+      "styles/*": ["src/styles/*"]
     }
   }
 }
