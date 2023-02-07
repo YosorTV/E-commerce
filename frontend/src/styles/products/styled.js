@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Main = styled.main`
   display: flex;
+  flex-direction: column;
 `;
 
 export const Section = styled.section`
@@ -43,9 +44,9 @@ export const StyledProducts = styled.figure`
   box-shadow: 0px 0px 1rem #cfcfcf;
   transition: 0.3s all ease-in-out;
   img {
+    height: 30vh;
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    object-fit: cover;
   }
   h3 {
     padding: 0rem 0rem 1rem 0rem;

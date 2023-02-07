@@ -1,23 +1,22 @@
 {
-  "kind": "singleType",
-  "collectionName": "product",
+  "kind": "collectionType",
+  "collectionName": "products_all",
   "info": {
     "singularName": "products",
-    "pluralName": "product",
-    "displayName": "Products"
+    "pluralName": "products-all",
+    "displayName": "Products",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "description": {
-      "type": "text",
-      "required": true
+      "type": "text"
     },
     "products": {
       "type": "component",

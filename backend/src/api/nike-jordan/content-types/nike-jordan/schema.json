@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "nike_jordans",
+  "info": {
+    "singularName": "nike-jordan",
+    "pluralName": "nike-jordans",
+    "displayName": "Nike Jordan"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::products.products"
+    }
+  }
+}
